@@ -1,7 +1,7 @@
 import firebase_admin
 from firebase_admin import credentials, firestore, messaging
 
-my_credentials = credentials.Certificate('D:\proiect mobile\server\debatetracker-75c01-firebase-adminsdk-c5xjv-e3cea6825a.json')
+my_credentials = credentials.Certificate("C:/Users/Bogdan/Desktop/config.json")
 app = firebase_admin.initialize_app(my_credentials)
 
 def send_notification(title, body):
