@@ -36,10 +36,10 @@ body_entry.grid(column=0, row=5)
 
 def send_notification(topic, title, body):
     message = messaging.Message(
-        notification=messaging.Notification(
-            title=title,
-            body=body,
-        ),
+        data = {
+            'title': title,
+            'body': body,
+        },
         topic="/topics/" + topic,
     )
 
